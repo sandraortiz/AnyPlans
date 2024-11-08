@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrincipalActivity"
+    android:background="@drawable/fondo_admin">
+
+    <!-- Toolbar con imagen -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorPrimary"
+        android:titleTextColor="@android:color/white"
+        app:layout_scrollFlags="scroll|enterAlways">
+        <ImageView
+            android:id="@+id/toolbar_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/logo" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Contenedor principal de contenido -->
+    <LinearLayout
+        android:id="@+id/mainActualizarUsuario"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Título principal del Dashboard -->
+        <TextView
+            android:id="@+id/tvSaludo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualización de Datos"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Descripción del Dashboard -->
+        <TextView
+            android:id="@+id/dashboard_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifique los datos del usuario"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="3dp" />
+
+
+        <EditText
+            android:id="@+id/edtDni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@android:color/white"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="DNI"
+            android:textColorHint="@color/white"
+            android:paddingLeft="5dp" />
+
+
+        <EditText
+            android:id="@+id/edtNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@android:color/white"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:hint="Nombres"
+            android:textColorHint="@color/white"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/edtApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@android:color/white"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:hint="Apellidos"
+            android:textColorHint="@color/white"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@android:color/white"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:hint="Usuario"
+            android:textColorHint="@color/white"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@android:color/white"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            android:paddingLeft="5dp" />
+
+
+
+        <Button
+            android:id="@+id/btnActualizarUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:background="#1976d2"
+            android:text="Guardar cambios"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+
+
+        <!-- Pie de página -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|bottom"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPN-2024 / DESARR. DE APLIC. MÓVILES - 1341 (Grupo 5)"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
